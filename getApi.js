@@ -1,7 +1,6 @@
 const axios = require("axios");
 
 async function callApi(i) {
-  let errIdx = [];
   try {
     const response = await axios(
       `https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo=${i}`
